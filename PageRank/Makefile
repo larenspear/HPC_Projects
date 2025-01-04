@@ -4,8 +4,7 @@ CXXFLAGS = -std=c++20 -Wall -Wextra -pedantic
 
 TARGET = pagerank
 
-SRCS = main.cpp
-
+SRCS = main.cpp Page.cpp Web.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(TARGET)
@@ -21,3 +20,4 @@ clean:
 
 run: $(TARGET)
 	./$(TARGET)
+
